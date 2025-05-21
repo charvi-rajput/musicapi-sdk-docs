@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>JS & Python Initialisation - Music API SDK Docs</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../../css/copy-button.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "JS \u0026 Python Initialisation";
+        var mkdocs_page_input_path = "initial\\jspyini.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> Music API SDK Docs
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Installation</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../install/jspyins/">JS & Python Installation</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Initialisation</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">JS & Python Initialisation</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#javascript">Javascript</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#python">Python</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Authentication</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../auth/jspyauth/">JS & Python Authentication</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Usage Examples</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../use/srch/">Search for Tracks</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../use/get-user/">Get User Playlists</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Error Handling</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../error/jspyerr/">JS & Python Error Handling</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Type Definitions</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../type/jspytd/">JS & Python Type Definitions</a>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../faq/">FAQs</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../supp/">Support</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">Music API SDK Docs</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Initialisation</li>
+      <li class="breadcrumb-item active">JS & Python Initialisation</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="initialisation">Initialisation</h1>
+<p>Before using TunePlay SDK, initialize it with your Basic Authorization.</p>
+<h2 id="javascript">Javascript</h2>
+<div class="highlight"><pre><span></span><code>import<span class="w"> </span>TunePlay<span class="w"> </span>from<span class="w"> </span><span class="s1">&#39;@tuneplay/sdk&#39;</span><span class="p">;</span>
+
+const<span class="w"> </span><span class="nv">tp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>new<span class="w"> </span>TunePlay<span class="o">({</span>
+<span class="w">    </span>security:<span class="w"> </span>basauth
+<span class="o">})</span><span class="p">;</span>
+</code></pre></div>
+<hr />
+<h2 id="python">Python</h2>
+<p><div class="highlight"><pre><span></span><code>from<span class="w"> </span>tuneplay_sdk<span class="w"> </span>import<span class="w"> </span>TunePlay
+
+<span class="nv">tp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span>TunePlay<span class="o">(</span><span class="nv">security</span><span class="o">=</span>basuth<span class="o">)</span>
+</code></pre></div>
+This setup prepares the SDK for making API calls on your behalf.</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../install/jspyins/" class="btn btn-neutral float-left" title="JS & Python Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../../auth/jspyauth/" class="btn btn-neutral float-right" title="JS & Python Authentication">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../install/jspyins/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../../auth/jspyauth/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../js/copy-button.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
