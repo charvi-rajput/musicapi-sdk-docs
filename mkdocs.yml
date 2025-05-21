@@ -1,0 +1,44 @@
+site_name: Music API SDK Docs
+
+theme: 
+  name: readthedocs
+
+extra_css:
+  - css/copy-button.css
+
+extra_javascript:
+  - js/copy-button.js
+
+
+markdown_extensions:
+  - codehilite
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+
+nav:
+  - Home: index.md
+
+  - Installation: 
+    - JS & Python Installation: install/jspyins.md
+
+  - Initialisation: 
+    - JS & Python Initialisation: initial/jspyini.md
+
+  - Authentication:
+    - JS & Python Authentication: auth/jspyauth.md
+
+  - Usage Examples: 
+    - Search for Tracks: use/srch.md
+    - Get User Playlists: use/get-user.md
+
+  - Error Handling:
+    - JS & Python Error Handling: error/jspyerr.md
+
+  - Type Definitions:
+    - JS & Python Type Definitions: type/jspytd.md
+
+  - FAQs: faq.md
+
+  - Support: supp.md
+
