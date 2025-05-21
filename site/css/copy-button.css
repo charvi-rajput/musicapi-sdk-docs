@@ -1,0 +1,25 @@
+.copy-button {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 0.8em;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  border-radius: 4px;
+  transition: background 0.2s ease;
+}
+
+.copy-button svg {
+  margin-right: 4px;
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
+.copy-button:hover {
+  background: #eee;
+}

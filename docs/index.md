@@ -2,7 +2,7 @@
 
 This is a sample Mkdocs generated Tuneplay Music API SDK Documentation. 
 
-The TunePlay SDK provides a simple and powerful way to interact with the TunePlay Music API. Use it to search for songs, manage user libraries, and more, all with a few lines of code.
+The TunePlay SDK provides a simple and powerful way to interact with the TunePlay Music API. Use it to search for playlists, manage user playlists, and more, all with a few lines of code.
 
 ## Installation
 Learn how to install the TunePlay SDK in both JavaScript and Python environments.
@@ -11,7 +11,7 @@ Learn how to install the TunePlay SDK in both JavaScript and Python environments
 Initialize the SDK with your API key to start accessing TunePlay features.
 
 ## Authentication
-Authenticate users via Basic Authorization to access personal libraries, playlists, and more.
+Authenticate users via Basic Authorization to access personal playlists, and more.
 
 ## Usage Examples
 Perform keyword-based searches to find music tracks & fetch, manage and display user-created or saved playlists.

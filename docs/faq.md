@@ -13,14 +13,14 @@
 -----
 
 ### Q. How do I authenticate users securely?
-**A.** Use the built-in OAuth2 authentication methods provided by the SDK to securely log users in and manage access tokens.
+**A.** Use the built-in Basic authorization methods provided by the SDK to securely log users in.
 
 -----
 
 ### Q. What happens if a user tries to delete a file that no longer exists?
-**A.** The SDK will raise an error. You can catch it and show a message like: “The file you are trying to delete does not exist or has already been removed.”
+**A.** The SDK will raise an error. You can catch it and show a message like: “Already Deleted”
 
 -----
 
 ### Q. Are API rate limits enforced?
-**A.** Yes, rate limits apply. Check the developer dashboard for your plan’s quota and usage.
+**A.** No, the number of rate limits are *none by default*.
